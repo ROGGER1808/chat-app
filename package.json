@@ -4,8 +4,8 @@
   "description": "4 chú thỏ",
   "main": "index.js",
   "scripts": {
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "start": "nodemon --inspect src/index.js"
-    
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
     "express-handlebars": "^5.3.4",
     "mongoose": "^6.0.7",
     "nodemon": "^2.0.13"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^6.0.1"
   }
 }

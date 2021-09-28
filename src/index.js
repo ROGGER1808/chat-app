@@ -2,8 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const exphbs = require("express-handlebars");
 const path = require('path');
+const morgan = require('morgan');
 
 var app = express();
+
+app.use(morgan('combined'));
 
 app.engine(
   "hbs",
@@ -22,7 +25,7 @@ app.listen(3000, async () => {
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get("/", function (req, res) {
-  res.send("say hi");
+  res.render('home');
 });
 
 const connectToDatabase = async () => {
