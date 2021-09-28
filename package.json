@@ -1,17 +1,26 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
-  "description": "team-4-con-soi",
+  "description": "4 chú thỏ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect src/index.js"
+    
   },
-  "author": " <4-con-soi>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ROGGER1808/chat-app.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ROGGER1808/chat-app/issues"
+  },
+  "homepage": "https://github.com/ROGGER1808/chat-app#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "handlebars": "^4.7.7",
+    "express-handlebars": "^5.3.4",
     "mongoose": "^6.0.7",
-    "socket.io": "^4.2.0"
+    "nodemon": "^2.0.13"
   }
 }
